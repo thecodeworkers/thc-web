@@ -5,8 +5,7 @@ import Block3 from "./element/Block3";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = new Date().getFullYear();
   return (
     <footer style={{ backgroundColor: "rgb(255,255,255)" }}>
       <div className={`${styles["_footer-space"]}`}>
