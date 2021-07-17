@@ -154,3 +154,80 @@
     padding: 0;
   }
 }
+
+._btn {
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  background-color: cv.$thc-pink-color;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.35s ease-out;
+  -moz-transition: background-color 0.35s ease-out;
+  -o-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
+  letter-spacing: cv.$letter-spacing;
+
+  &:hover {
+    background-color: cv.$thc-light-pink-color;
+    outline: none;
+    cursor: pointer !important;
+  }
+}
+._btn-lg {
+  font-size: 18px;
+  padding: 14px 14px;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1450px) {
+  ._btn-lg {
+    font-size: 26px;
+    padding: 18px 30px;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1449px) {
+  ._btn-lg {
+    font-size: 22px;
+    padding: 18px 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  ._btn-lg {
+    font-size: 18px;
+    padding: 18px 18px;
+    min-width: 200px;
+  }
+}
+
+._btn-sm {
+  font-size: 16px;
+  padding: 18px 18px;
+  font-weight: 400;
+}
+
+._btn-lg,
+._btn-sm {
+  line-height: 1.33px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 415px) and (max-width: 950px) {
+  ._btn-sm {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  ._btn-sm {
+    font-size: 20px;
+  }
+}
+
+footer {
+  background: #57c0ff;
+  padding: 40px 0px;
+  color: cv.$blue-color;
+}
