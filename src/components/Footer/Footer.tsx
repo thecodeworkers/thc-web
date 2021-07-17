@@ -7,9 +7,17 @@ import styles from "./Footer.module.scss";
 const Footer = () => (
   <footer style={{ backgroundColor: "rgb(255,255,255)" }}>
     <div className={`${styles["_footer-space"]}`}>
-      <Block1 />
-      <Block2 />
-      <Block3 />
+      <div className={`${styles["_footer-flex"]}`}>
+        <Block1 />
+        <Block2 />
+        <Block3 />
+      </div>
+      <p style={{ textAlign: "center" }}>
+        <small>
+          Copyright &copy; 2017-2021 by The Hunter's Company SAS. All Rights
+          Reserved.
+        </small>
+      </p>
     </div>
   </footer>
 );
